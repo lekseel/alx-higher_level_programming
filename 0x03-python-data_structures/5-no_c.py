@@ -1,4 +1,3 @@
-e File  14 lines (10 sloc)  308 Bytes
 #!/usr/bin/python3
 def no_c(my_string):
     length = len(my_string)
