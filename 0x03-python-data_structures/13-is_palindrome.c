@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stddef.h>
+
 /**
  * reverse - reverses the second half of the list
  *
@@ -31,7 +31,7 @@ void reverse(listint_t **h_r)
  *
  * @h1: head of the first half
  * @h2: head of the second half
- * Return: 1 if equal, 0 otherwise
+ * Return: 1 if are equals, 0 if not
  */
 int compare(listint_t *h1, listint_t *h2)
 {
@@ -53,6 +53,7 @@ int compare(listint_t *h1, listint_t *h2)
 			return (0);
 		}
 	}
+
 	if (tmp1 == NULL && tmp2 == NULL)
 	{
 		return (1);
@@ -65,8 +66,8 @@ int compare(listint_t *h1, listint_t *h2)
  * is_palindrome - checks if a singly linked list
  * is a palindrome
  * @head: pointer to head of list
- * Return: 0 if not a palindrome,
- * 1 if palindrome
+ * Return: 0 if it is not a palindrome,
+ * 1 if it is a palndrome
  */
 int is_palindrome(listint_t **head)
 {
@@ -108,5 +109,6 @@ int is_palindrome(listint_t **head)
 			prev_slow->next = scn_half;
 		}
 	}
+
 	return (isp);
 }
